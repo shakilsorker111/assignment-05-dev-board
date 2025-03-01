@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DevBoard</title>
 
 
     <!-- DaisyUI CDN -->
@@ -24,7 +24,7 @@
                 <div class="flex gap-9 items-center">
                     <div class="flex px-4 py-4 gap-2 justify-center items-center bg-[#F4F7FF] rounded-full">
                         <img class="w-8 h-8" src="assets/checkbox.png" alt="">
-                        <h1 class="text-3xl font-bold">23</h1>
+                        <h1 id="task-count" class="text-3xl font-bold">23</h1>
                     </div>
                     <div class="px-3 py-3 bg-[#F4F7FF] rounded-full">
                         <img src="assets/theme-btn.png" alt="">
@@ -58,7 +58,7 @@
         
                             <div>
                                 <p class="text-base font-medium">Task Assigned</p>
-                                <h3 class="text-3xl font-bold">05</h3>
+                                <h3 id="task-assigned" class="text-3xl font-bold">06</h3>
                             </div>
         
                         </div>
@@ -81,7 +81,7 @@
                             </div>
         
                             <div>
-                                <p class="text-xl">Wed ,<br><span class="font-bold">Jul 28 2025 </span></p>
+                                <p class="text-xl">Wed ,<br><span id="upper-div-date" class="font-bold">Jul 28 2025 </span></p>
                             </div>
         
                         </div>
@@ -115,7 +115,7 @@
                         <p class="text-sm text-[#00303C]">Deadline</p>
                         <h1 class="text-base font-medium">21 March 2025</h1>
                     </div>
-                    <button class="text-base text-[#FFFFFF] px-5 py-2 bg-[#3752FD] rounded-lg">Completed</button>
+                    <button id="card-btn-1" class="text-base text-[#FFFFFF] px-5 py-2 bg-[#3752FD] rounded-lg card-btn">Completed</button>
                 </div>
     
              </div>
@@ -140,7 +140,7 @@
                         <p class="text-sm text-[#00303C]">Deadline</p>
                         <h1 class="text-base font-medium">21 March 2025</h1>
                     </div>
-                    <button class="text-base text-[#FFFFFF] px-5 py-2 bg-[#3752FD] rounded-lg">Completed</button>
+                    <button id="card-btn-2" class="text-base text-[#FFFFFF] px-5 py-2 bg-[#3752FD] rounded-lg card-btn">Completed</button>
                 </div>
     
              </div>
@@ -166,7 +166,7 @@
                         <p class="text-sm text-[#00303C]">Deadline</p>
                         <h1 class="text-base font-medium">21 March 2025</h1>
                     </div>
-                    <button class="text-base text-[#FFFFFF] px-5 py-2 bg-[#3752FD] rounded-lg">Completed</button>
+                    <button id="card-btn-3" class="text-base text-[#FFFFFF] px-5 py-2 bg-[#3752FD] rounded-lg card-btn">Completed</button>
                 </div>
     
              </div>
@@ -192,7 +192,7 @@
                         <p class="text-sm text-[#00303C]">Deadline</p>
                         <h1 class="text-base font-medium">21 March 2025</h1>
                     </div>
-                    <button class="text-base text-[#FFFFFF] px-5 py-2 bg-[#3752FD] rounded-lg">Completed</button>
+                    <button id="card-btn-4" class="text-base text-[#FFFFFF] px-5 py-2 bg-[#3752FD] rounded-lg card-btn">Completed</button>
                 </div>
     
              </div>
@@ -218,7 +218,7 @@
                         <p class="text-sm text-[#00303C]">Deadline</p>
                         <h1 class="text-base font-medium">21 March 2025</h1>
                     </div>
-                    <button class="text-base text-[#FFFFFF] px-5 py-2 bg-[#3752FD] rounded-lg">Completed</button>
+                    <button id="card-btn-5" class="text-base text-[#FFFFFF] px-5 py-2 bg-[#3752FD] rounded-lg card-btn">Completed</button>
                 </div>
     
              </div>
@@ -244,7 +244,7 @@
                         <p class="text-sm text-[#00303C]">Deadline</p>
                         <h1 class="text-base font-medium">21 March 2025</h1>
                     </div>
-                    <button class="text-base text-[#FFFFFF] px-5 py-2 bg-[#3752FD] rounded-lg">Completed</button>
+                    <button id="card-btn-6" class="text-base text-[#FFFFFF] px-5 py-2 bg-[#3752FD] rounded-lg card-btn">Completed</button>
                 </div>
     
              </div>
@@ -264,22 +264,29 @@
                     <p class="text-xl font-medium">Activity Log</p>
                 </div>
                 <div>
-                    <button class="px-5 py-2 bg-[#3752FD] rounded-lg text-[#FFFFFF]">Clear History</button>
+                    <button id="clear-history-btn" class="px-5 py-2 bg-[#3752FD] rounded-lg text-[#FFFFFF]">Clear History</button>
                 </div>
               </div>
 
-              <div class="p-8 flex flex-col gap-7">
+              <div id="right-activity-div" class="p-8 flex flex-col gap-7">
                 
-                <div class="p-3 bg-[#F4F7FF] rounded-lg">
+                <!-- <div class="p-3 bg-[#F4F7FF] rounded-lg">
                     <p class="text-base">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
-                </div>
+                </div> -->
 
-                <div class="p-3 bg-[#F4F7FF] rounded-lg">
+                <!-- <div class="p-3 bg-[#F4F7FF] rounded-lg">
                     <p class="text-base">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
-                </div>
+                </div> -->
+
               </div>
           </div>
      </section>
+
+
+
+
+
+     <script src="script/script.js"></script>
 
 </body>
 </html>
