@@ -181,11 +181,20 @@ document.getElementById('discover-div').addEventListener('click', function(){
 
 
 
-    // main nav right btn
+
+
+
+
+// main nav right btn
+function getColor() {
+    const letters = "0123456789ABCDEF";
+    let color = "#";
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
     document.getElementById('main-nav-right-btn').addEventListener('click', function(){
-
-    })
-    
-
-
-    
+        document.body.style.backgroundColor = getColor();
+    });
