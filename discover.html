@@ -3,9 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Discover</title>
+
+    <!-- DaisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
-<body>
+<body class="bg-slate-100 pt-6 pb-12">
     
+    <!-- nav bar section -->
+    <nav class="container bg-white mx-auto px-6 py-4 rounded-2xl mb-5">
+
+        <div class="flex justify-between items-center">
+            <div class="flex gap-3 items-center">
+                <img src="assets/logo.png" alt="">
+                <h1 class="text-4xl">Dev<span class="font-bold text-[#00303C]">Board</span></h1>
+            </div>
+
+            <div class="">
+                <button id="back-desk-btn" class="px-5 py-3 font-bold bg-[#3752FD] rounded-lg text-[#FFFFFF]">Back to Desk</button>
+            </div>
+    </div>
+
+</nav>
+
+
+
+
+
+<main class="container mx-auto gap-5 flex flex-col">
+    <div class="text-center">
+        <h1 class="text-3xl font-bold">Blogs</h1>
+    </div>
+
+    <!-- question-1 -->
+    <div class="bg-white rounded-2xl p-4">
+        <div class="p-3 border-dashed border-b-2">
+            <p class="text-xl font-bold">Question-1: What are the different ways to select an element in the DOM?</p>
+        </div>
+
+        <div class="p-3">
+            <p class="text-xl">We can select element in dom using many method : <br>
+                1. By document.getElementById('id');<br>
+                2. By document.getElementsByClassName('class');<br>
+                3. By document.querySelector('class');<br>
+                4. By document.querySelectorAll('class');<br>
+                5. By document.getElementsByTagName('tag');<br>
+                6. By document.getElementsByName('name');
+            </p>
+        </div>
+    </div>
+
+    <!-- question-2 -->
+    <div class="bg-white rounded-2xl p-4">
+        <div class="p-3 border-dashed border-b-2">
+            <p class="text-xl font-bold">Question-2: What is the difference between innerHTML, innerText, and textContent ?</p>
+        </div>
+
+        <div class="p-3">
+            <p class="text-xl">Difference: <br>
+                1. innerHTML can can change and set inside html tags.<br>
+                2. innerText can set inside text.<br>
+                3. textContent can set all type of text.
+            </p>
+        </div>
+    </div>
+
+    <!-- question-3 -->
+    <div class="bg-white rounded-2xl p-4">
+        <div class="p-3 border-dashed border-b-2">
+            <p class="text-xl font-bold">Question-3: What is event delegation in the DOM?</p>
+        </div>
+
+        <div class="p-3">
+            <p class="text-xl">Event delegation is a technique that handles events for child using event bubbling.</p>
+        </div>
+    </div>
+
+    <!-- question-4 -->
+    <div class="bg-white rounded-2xl p-4">
+        <div class="p-3 border-dashed border-b-2">
+            <p class="text-xl font-bold">Question-4: What is event bubbling in the DOM?</p>
+        </div>
+
+        <div class="p-3">
+            <p class="text-xl">Event bubbling is a event that can find target element that clicked.</p>
+        </div>
+    </div>
+
+    <!-- question-5 -->
+    <div class="bg-white rounded-2xl p-4">
+        <div class="p-3 border-dashed border-b-2">
+            <p class="text-xl font-bold">Question-5: How do you create, add, and remove elements using JavaScript?</p>
+        </div>
+
+        <div class="p-3">
+            <p class="text-xl">1. document.createElement() <br>
+                2. appendChild()<br>
+                3. remove()<br>
+                4. removeChild()<br>
+                5. replace()<br>
+            </p>
+        </div>
+    </div>
+
+</main>
+
+
+
+
+
+    <!-- discover.js -->
+<script src="script/discover.js"></script>
+
 </body>
 </html>

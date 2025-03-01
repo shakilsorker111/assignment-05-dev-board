@@ -164,8 +164,28 @@ document.getElementById('card-btn-6').addEventListener('click', function(){
 
 
 
-
     // right side activity log - clear history button
 document.getElementById('clear-history-btn').addEventListener('click', function(){
     document.getElementById('right-activity-div').innerHTML = ``;
 })
+
+
+
+
+
+
+// Discover Something New Today
+document.getElementById('discover-div').addEventListener('click', function(){
+    window.location.href = 'discover.html';
+});
+
+
+
+    // main nav right btn
+    document.getElementById('main-nav-right-btn').addEventListener('click', function(){
+
+    })
+    
+
+
+    
