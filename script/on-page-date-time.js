@@ -23,3 +23,16 @@ const months = ["January","February","March","April","May","June","July","August
         const year = new Date();
         const fullYear = year.getFullYear();
         document.getElementById('get-year').innerText = fullYear;
+
+
+        function time(){
+                const newDate = new Date();
+                const hour = newDate.getUTCHours() + 6;
+                const minute = newDate.getUTCMinutes();
+                const second = newDate.getUTCSeconds();
+                const amPm = hour >= 12 ? 'PM' : 'AM';
+
+                const hours = hour % 12 || 12;
+
+                return `${hours}:${minute}:${second} ${amPm}`;
+        }

@@ -1,6 +1,6 @@
 
 
-// document.getElementById('upper-div-date').innerText = 
+ 
 
 
 
@@ -23,11 +23,14 @@ document.getElementById('card-btn-1').addEventListener('click', function(){
     const div = document.createElement('div');
     div.innerHTML = `
     <div class="p-3 bg-[#F4F7FF] rounded-lg">
-                    <p class="text-base">You have Complete The Task Fix Mobile Button Issue at 12:48:15 PM</p>
+                    <p class="text-base">You have Complete The Task Fix Mobile Button Issue at <span id="click-time-1" >12:48:15 PM</span> </p>
                 </div>
     `;
 
     document.getElementById('right-activity-div').appendChild(div);
+
+    const utcTime = time();
+    document.getElementById('click-time-1').innerText = utcTime;
 });
 
 
@@ -49,11 +52,15 @@ document.getElementById('card-btn-2').addEventListener('click', function(){
     const div = document.createElement('div');
     div.innerHTML = `
     <div class="p-3 bg-[#F4F7FF] rounded-lg">
-                    <p class="text-base">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
+                    <p class="text-base">You have Complete The Task Add Dark Mode at <span id="click-time-2" >12:48:15 PM</span> </p>
                 </div>
     `;
 
     document.getElementById('right-activity-div').appendChild(div);
+
+
+    const utcTime = time();
+    document.getElementById('click-time-2').innerText = utcTime;
 });
 
 
@@ -75,11 +82,16 @@ document.getElementById('card-btn-3').addEventListener('click', function(){
     const div = document.createElement('div');
     div.innerHTML = `
     <div class="p-3 bg-[#F4F7FF] rounded-lg">
-                    <p class="text-base">You have Complete The Task Optimize  Home page at 12:48:15 PM</p>
+                    <p class="text-base">You have Complete The Task Optimize  Home page at <span id="click-time-3" >12:48:15 PM</span></p>
                 </div>
     `;
 
     document.getElementById('right-activity-div').appendChild(div);
+
+
+
+    const utcTime = time();
+    document.getElementById('click-time-3').innerText = utcTime;
 });
 
 
@@ -101,11 +113,15 @@ document.getElementById('card-btn-4').addEventListener('click', function(){
     const div = document.createElement('div');
     div.innerHTML = `
     <div class="p-3 bg-[#F4F7FF] rounded-lg">
-                    <p class="text-base">You have Complete The Task Add new emoji 🤲 at 12:48:15 PM</p>
+                    <p class="text-base">You have Complete The Task Add new emoji 🤲 at <span id="click-time-4" >12:48:15 PM</span></p>
                 </div>
     `;
 
     document.getElementById('right-activity-div').appendChild(div);
+
+
+    const utcTime = time();
+    document.getElementById('click-time-4').innerText = utcTime;
 });
 
 
@@ -127,11 +143,16 @@ document.getElementById('card-btn-5').addEventListener('click', function(){
     const div = document.createElement('div');
     div.innerHTML = `
     <div class="p-3 bg-[#F4F7FF] rounded-lg">
-                    <p class="text-base">You have Complete The Task Integrate OpenAI API at 12:48:15 PM</p>
+                    <p class="text-base">You have Complete The Task Integrate OpenAI API at <span id="click-time-5" >12:48:15 PM</span></p>
                 </div>
     `;
 
     document.getElementById('right-activity-div').appendChild(div);
+
+
+
+    const utcTime = time();
+    document.getElementById('click-time-5').innerText = utcTime;
 });
 
 
@@ -153,11 +174,16 @@ document.getElementById('card-btn-6').addEventListener('click', function(){
     const div = document.createElement('div');
     div.innerHTML = `
     <div class="p-3 bg-[#F4F7FF] rounded-lg">
-                    <p class="text-base">You have Complete The Task Improve Job searching at 12:48:15 PM</p>
+                    <p class="text-base">You have Complete The Task Improve Job searching at <span id="click-time-6" >12:48:15 PM</span></p>
                 </div>
     `;
 
     document.getElementById('right-activity-div').appendChild(div);
+
+
+
+    const utcTime = time();
+    document.getElementById('click-time-6').innerText = utcTime;
 });
 
 
@@ -186,7 +212,7 @@ document.getElementById('discover-div').addEventListener('click', function(){
 
 
 // main nav right btn
-function getColor() {
+function bgColor() {
     const letters = "0123456789ABCDEF";
     let color = "#";
     for (let i = 0; i < 6; i++) {
@@ -196,5 +222,5 @@ function getColor() {
 }
 
     document.getElementById('main-nav-right-btn').addEventListener('click', function(){
-        document.body.style.backgroundColor = getColor();
+        document.body.style.backgroundColor = bgColor();
     });
